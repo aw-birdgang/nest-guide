@@ -1,0 +1,11 @@
+{
+  "name": "key",
+  "namespace": "test.topic",
+  "type": "record",
+  "fields": [
+    {
+      "name": "id",
+      "type": "int"
+    }
+  ]
+}
