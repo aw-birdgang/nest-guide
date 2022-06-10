@@ -13,7 +13,6 @@ export class AppController {
 
   @MessagePattern('get_user')
   getUser(data: any) {
-    console.log('data.value : ' + data.value);
     return this.appService.getUser(data.value);
   }
 }

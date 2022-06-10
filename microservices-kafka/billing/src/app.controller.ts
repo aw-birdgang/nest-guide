@@ -15,9 +15,8 @@ export class AppController implements OnModuleInit {
   }
 
   @EventPattern('order_created')
-  handleOrderCreated(data: any) {
-    console.log('data.value : ' + data.value);
-    this.appService.handleOrderCreated(data.value);
+  async handleOrderCreated(data: any) {
+    await this.appService.handleOrderCreated(data.value);
   }
 
   onModuleInit() {
